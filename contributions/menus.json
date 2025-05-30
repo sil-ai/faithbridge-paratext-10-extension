@@ -1,17 +1,53 @@
 {
-  "mainMenu": {
-    "columns": {},
-    "groups": {},
-    "items": []
-  },
-  "defaultWebViewTopMenu": {
-    "columns": {},
-    "groups": {},
-    "items": []
-  },
-  "defaultWebViewContextMenu": {
-    "groups": {},
-    "items": []
-  },
-  "webViewMenus": {}
-}
+    "mainMenu": {
+      "columns": {},
+      "groups": {},
+      "items": [
+        {
+            "label": "%faithbridgeMenu_openFaithbridge%",
+            "group": "platform.projectProjects",
+            "order": -84,
+            "command": "faithbridge.openFaithbridge"
+        }
+      ]
+    },
+    "defaultWebViewTopMenu": {
+      "columns": {},
+      "groups": {},
+      "items": []
+    },
+    "defaultWebViewContextMenu": {
+      "groups": {},
+      "items": []
+    },
+    "webViewMenus": {
+      "faithbridge.webView": {
+        "topMenu": {
+          "columns": {
+            "faithbridge.website": {
+              "label": "%faithbridgeMenu_website%",
+              "order": 4711,
+              "isExtensible": true
+            }
+          },
+          "groups": {
+            "faithbridge.website": { "column": "faithbridge.website", "order": 3 }
+          },
+          "items": [
+            {
+              "label": "%faithbridgeMenu_openUrl%",
+              "tooltip": "%faithbridgeMenu_openUrl_tooltip%",
+              "group": "faithbridge.website",
+              "order": 1,
+              "command": "faithbridge.openFaithbridge",
+              "iconPathAfter": "papi-extension://platformScripture/assets/icons/external-link.svg"
+            }
+          ]
+        },
+        "contextMenu": {
+          "groups": {},
+          "items": []
+        }
+      }
+    }
+  }

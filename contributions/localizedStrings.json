@@ -1,6 +1,13 @@
 {
-  "metadata": {},
-  "localizedStrings": {
-    "en": {}
+    "metadata": {},
+    "localizedStrings": {
+      "en": {
+        "%faithbridge_title_format%": "{resourceName}",
+        "%faithbridgeMenu_openFaithbridge%": "Faithbridge",
+        "%faithbridgeMenu_website%": "Website",
+        "%faithbridgeMenu_openUrl%": "Open Faithbridge",
+        "%faithbridgeMenu_openUrl_tooltip%": "Opens the Faithbridge tool"
+      }
+    }
   }
-}
+  

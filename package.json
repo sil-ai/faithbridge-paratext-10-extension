@@ -1,9 +1,9 @@
 {
-  "name": "paranext-extension-template",
+  "name": "faithbridge",
   "private": true,
   "version": "0.0.1",
   "main": "src/main.js",
-  "types": "src/types/paranext-extension-template.d.ts",
+  "types": "src/types/faithbridge.d.ts",
   "author": "Paranext",
   "license": "MIT",
   "scripts": {

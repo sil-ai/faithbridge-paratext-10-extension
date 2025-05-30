@@ -1,8 +1,8 @@
-# paranext-extension-template
+# Faithbridge
 
 Basic extension template for Platform.Bible
 
-<!-- <!-- Opening comment tag for Template Info Section. Ignore this for now. More info in [Hide Template Info](#hide-template-info). -->
+<!-- Opening comment tag for Template Info Section. Ignore this for now. More info in [Hide Template Info](#hide-template-info).
 
 ## Template Info
 
@@ -12,7 +12,7 @@ There is also a [template pre-configured to build an arbitrary number of Platfor
 
 ### Customize extension details
 
-Follow these instructions to customize the template to be your own Platform.Bible extension. This section is a more generalized version of the [`Your first extension` guide](https://github.com/paranext/paranext-extension-template/wiki/Your-First-Extension), which contains step-by-step instructions to build a "Hello World" extension.
+Follow these instructions to customize the template to be your own Platform.Bible extension. This section is a more generalized version of the [`Your first extension` guide](https://github.com/paranext/faithbridge/wiki/Your-First-Extension), which contains step-by-step instructions to build a "Hello World" extension.
 
 #### Install and hook up to the template
 
@@ -29,19 +29,19 @@ For your extension name, we recommend that you use [lowerCamelCase](https://deve
 
 - At the top of this `README.md`:
 
-  - Replace the first line `# paranext-extension-template` with `# your-extension-name` (kebab-case)
+  - Replace the first line `# faithbridge` with `# your-extension-name` (kebab-case)
   - Below the first line, replace the extension description with your own description
-  - In the [Summary](#summary) section, replace `src/types/paranext-extension-template.d.ts` with `src/types/your-extension-name.d.ts` (kebab-case)
+  - In the [Summary](#summary) section, replace `src/types/faithbridge.d.ts` with `src/types/your-extension-name.d.ts` (kebab-case)
 
 - In `manifest.json`:
 
   - Replace `paranextExtensionTemplate` with `yourExtensionName` (lowerCamelCase)
-  - Replace `src/types/paranext-extension-template.d.ts` with `src/types/your-extension-name.d.ts` (kebab-case)
+  - Replace `src/types/faithbridge.d.ts` with `src/types/your-extension-name.d.ts` (kebab-case)
   - Update ownership information and other relevant fields as desired
 
 - In `package.json`:
 
-  - Replace `paranext-extension-template` with `your-extension-name` (2 occurrences - kebab-case)
+  - Replace `faithbridge` with `your-extension-name` (2 occurrences - kebab-case)
   - Update ownership information and other relevant fields as desired
 
 - In `assets/displayData.json`:
@@ -62,9 +62,9 @@ For your extension name, we recommend that you use [lowerCamelCase](https://deve
   - Adjust as desired (feel free to choose a different license)
   - If you choose to stay with the current license, update the copyright statement
 
-- Rename `src/types/paranext-extension-template.d.ts` to `src/types/your-extension-name.d.ts` (kebab-case)
+- Rename `src/types/faithbridge.d.ts` to `src/types/your-extension-name.d.ts` (kebab-case)
 
-  - In this renamed file, replace `paranext-extension-template` with `your-extension-name`
+  - In this renamed file, replace `faithbridge` with `your-extension-name`
 
 - In `src/main.ts`, replace `Extension template` with `Your Extension Name` (2 occurrences)
 
@@ -72,7 +72,7 @@ For your extension name, we recommend that you use [lowerCamelCase](https://deve
 
 #### Customize the extension manifest and package information
 
-The `manifest.json` and `package.json` files contain information specific to your extension. Add your extension's details in these two files as needed. See more information on the `manifest.json` and `package.json` files in [Extension Anatomy](https://github.com/paranext/paranext-extension-template/wiki/Extension-Anatomy#extension-manifest).
+The `manifest.json` and `package.json` files contain information specific to your extension. Add your extension's details in these two files as needed. See more information on the `manifest.json` and `package.json` files in [Extension Anatomy](https://github.com/paranext/faithbridge/wiki/Extension-Anatomy#extension-manifest).
 
 #### Hide Template Info
 
@@ -90,7 +90,7 @@ The general file structure is as follows:
 - `manifest.json` is the manifest file that defines the extension and important properties for Platform.Bible. It is copied into the build folder
 - `src/` contains the source code for the extension
   - `src/main.ts` is the main entry file for the extension
-  - `src/types/paranext-extension-template.d.ts` is this extension's types file that defines how other extensions can use this extension through the `papi`. It is copied into the build folder
+  - `src/types/faithbridge.d.ts` is this extension's types file that defines how other extensions can use this extension through the `papi`. It is copied into the build folder
   - `*.web-view.tsx` files will be treated as React WebViews
   - `*.web-view.html` files are a conventional way to provide HTML WebViews (no special functionality)
 - `assets/` contains asset files the extension and its WebViews can retrieve using the `papi-extension:` protocol, as well as textual descriptions in various languages. It is copied into the build folder
@@ -213,12 +213,12 @@ You may have a different effective version of `@swc/core` than `paranext-core` d
 
 ## To update this extension from the template
 
-This extension project is forked from [`paranext-extension-template`](https://github.com/paranext/paranext-extension-template), which is updated periodically and will sometimes receive updates that help with breaking changes on [`paranext-core`](https://github.com/paranext/paranext-core). We recommend you periodically update your extension by merging the latest template updates into your extension.
+This extension project is forked from [`faithbridge`](https://github.com/paranext/faithbridge), which is updated periodically and will sometimes receive updates that help with breaking changes on [`paranext-core`](https://github.com/paranext/paranext-core). We recommend you periodically update your extension by merging the latest template updates into your extension.
 
 To set up this extension to be updated from the template, run the following command once after cloning this repo:
 
 ```bash
-git remote add template https://github.com/paranext/paranext-extension-template
+git remote add template https://github.com/paranext/faithbridge
 ```
 
 To update this extension from the template, make sure your repo has no working changes. Then run the following commands:
@@ -228,7 +228,7 @@ git fetch template
 git merge template/main --allow-unrelated-histories
 ```
 
-For more information, read [the instructions on the wiki](https://github.com/paranext/paranext-extension-template/wiki/Merging-Template-Changes-into-Your-Extension).
+For more information, read [the instructions on the wiki](https://github.com/paranext/faithbridge/wiki/Merging-Template-Changes-into-Your-Extension).
 
 **Note:** The merge/squash commits created when updating this repo from the template are important; Git uses them to compare the files for future updates. If you edit this repo's Git history, please preserve these commits (do not squash them, for example) to avoid duplicated merge conflicts in the future.
 

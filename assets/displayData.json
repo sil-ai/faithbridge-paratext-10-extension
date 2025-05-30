@@ -1,11 +1,11 @@
 {
   "icon": "",
-  "moreInfoUrl": "",
-  "supportUrl": "",
+  "moreInfoUrl": "https://ai.sil.org/projects/faithbridge",
+  "supportUrl": "https://ai.sil.org/contact",
   "localizedDisplayInfo": {
     "en": {
-      "displayName": "Paranext Extension Template",
-      "shortSummary": "Base template for a Platform.Bible Extension",
+      "displayName": "Faithbridge",
+      "shortSummary": "Chat with Bible Translation Resources",
       "description": "assets/descriptions/description-en.md"
     }
   }
